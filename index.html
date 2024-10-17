@@ -1,231 +1,357 @@
+<!-- problem is that index.html isn't at root :/ -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Chache</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Merriweather&family=Montserrat:wght@100;400;900&family=Nunito&family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <meta property='og:title' content='Aditya Chache - Personal Portfolio' />
+  <meta property='og:image' content='public/img/preview.png' />
+  <meta property='og:url' content='https://github.com/adityachache' />
 
-    <!-- Style Sheets -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+  <title>Aditya Chache</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/535688603d.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Custom fonts for this template -->
+  <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
-    <!-- Bootstrap Scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- adding a favicon -->
+  <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
 
-  <body>
-    <section id="header">
-      <div class="container-fluid">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#header"><span>Portfolio</span></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#contact-me">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://github.com/adityachache"
-                  target="_blank"
-                  ><i class="fab fa-github"></i> GitHub</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="resume/aditya-resume.pdf" target="_blank"
-                  ><button type="button" class="btn btn-outline-light resume-btn">
-                    Resume
-                  </button></a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <!-- Custom styles for this template -->
+  <!-- <link href="public/stylesheets/grayscale.css" rel="stylesheet"> -->
+  <link href="public/stylesheets/grayscale.min.css" rel="stylesheet">
+</head>
 
-        <div class="title-info">
-          <h1 class="Title">Aditya Chache</h1>
-          <h2>Python and Web Developer</h2>
-          <p class="title-para">
-            Hello, My name is Aditya Ravindra Chache. I'm currently in final
-            year of my Computer Engineering degree. I'm interested in learning
-            full-stack web development and data science. Currently I'm learning
-            Flask and JavaScript.
-          </p>
-        </div>
-      </div>
-    </section>
+<body id="page-top">
 
-    <section id="projects">
-      <h3 class="projects-title">Some of my Projects</h3>
-      <div class="container-fluid project-container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card project-card">
-              <img src="images/pass.png" class="card-img-top" alt="program image" />
-              <div class="card-body">
-                <p class="card-title">Password Manager</p>
-                <p class="card-text">
-                  A GUI based program which helps the user to store and retrieve
-                  passwords easily. Can also be used to generate strong
-                  passwords. Used JSON to store data and Tkinter to make the
-                  GUI.
-                </p>
-                <a href="https://github.com/adityachache/password-manager" target="_blank"><button type="button" class="btn btn-dark">source code</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card project-card">
-              <img src="images/stock.jpg" class="card-img-top" alt="sms image" />
-              <div class="card-body">
-                <p class="card-title">Stock Notification Alert</p>
-                <p class="card-text">
-                  A Python script which sends the user and sms on his/her phone
-                  whenever the price of the mentioned stock goes up or down by
-                  the mentioned percentage. Used Alphavantage API to get the
-                  stock data and twilio sms service to send sms.
-                </p>
-                <a href="https://github.com/adityachache/stock-trading-notification-alert" target="_blank"><button type="button" class="btn btn-dark">source code</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card project-card">
-              <img src="images/spotify.png" class="card-img-top" alt="spotify playlist" />
-              <div class="card-body">
-                <p class="card-title">Musical Time Machine</p>
-                <p class="card-text">
-                  Python project used to scrape songs from Billboard (from any
-                  date), create playlist on Spotify using spotipy library and
-                  add those songs into the playlist.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card project-card">
-              <img
-                src="images/classification.png"
-                class="card-img-top"
-                alt="web app image"
-              />
-              <div class="card-body">
-                <p class="card-title">Snake Species Classifier</p>
-                <p class="card-text">
-                  Image classification project to classify different species of
-                  snakes. Web app made using streamlit. Used transfer learning
-                  with InceptionV3.
-                </p>
-                <a href="https://share.streamlit.io/adityachache/classification-app/app1.py" target="_blank"><button type="button" class="btn btn-dark ">view implementation</button></a>
-                <a href="https://github.com/adityachache/snake-species-classification" target="_blank"><button type="button" class="btn btn-dark ">source code</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <h3 class="skill-title">My Skills</h3>
-      <div class="container-fluid">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <i class="fab fa-python"></i> Python3 (OOP, Api's, Bs4/Selenium,
-            Flask, Pandas, Numpy, Matplotlib)
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
           </li>
-          <li class="list-group-item"><i class="fab fa-html5"></i> HTML5</li>
-          <li class="list-group-item"><i class="fab fa-css3-alt"></i> CSS3</li>
-          <li class="list-group-item">
-            <i class="fab fa-js"></i> JavaScript (React.js, Node.js)
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">Work</a>
           </li>
-          <li class="list-group-item">
-            <i class="fas fa-database"></i> PostgreSQL/MySQL
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+          <li class="nav-item" id="resume-button-li">
+            <a id="resume-button" class="js-scroll-trigger"
+              href="aditya_resume_SE.pdf" target="_blank">Resume</a>
           </li>
         </ul>
       </div>
-    </section>
-    <section id="contact-me">
-      <h3 class="contact-me-title">Connect With Me</h3>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <br></br>
+        <img class="circularimage" src="public/img/headshot.jpg" alt="madelinezhangheadshot.jpg" height="200">
+        <br><br><br>
+        <h1 class="mx-auto my-0 text-uppercase">Aditya Chache</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Ex SDE | Business Grad Student | Food Enthusiast</h2>
+        <a id="moreButton" href="#about" class="btn btn-primary js-scroll-trigger">More About Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section text-center">
+    <div id="about" class="container">
+      <br><br>
       <div class="row">
-        <div class="col-lg-4">
-          <div class="card contact-me-card">
-            <div class="card-body">
-              <i class="fas fa-envelope"></i>
-              <p>Email</p>
-              <hr />
-              <a class="mail-to" href="mailto: aditya.chache@gmail.com" target="_blank">aditya.chache@gmail.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card contact-me-card">
-            <div class="card-body">
-              <i class="fas fa-users"></i>
-              <p>Socials</p>
-              <hr />
-              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook social-icons"></i></a>
-              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram social-icons"></i></a>
-              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin social-icons"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card contact-me-card">
-            <div class="card-body">
-              <i class="fas fa-mobile-alt"></i>
-              <p>Phone</p>
-              <hr />
-              <p>7977191236</p>
-            </div>
-          </div>
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Hello there! I'm Aditya, a business analytics grad student at <a
+              >California State University, East Bay</a> and Ex <a
+              >Software Developer</a> at Jio Platforms Limited</h2>
+          <p class="text-white-50"> I'm currently doing my master's degree in Business Anaytics from Cal State East Bay.
+            I'm interested in pursuing my career as a data engineer/data analyst especially in the fashion-tech
+            domain<br /> <br />
+            I completed my bachelor's degree in computer engineering from University of Mumbai and then worked as a
+            software development engineer at Jio Platforms Limited. During my time as an SDE, I worked on two enterprise
+            level migration projects (Enterprise Product Catalog and Plan to Build Order Care)
+            I mainly worked as a frontend developer in t he beginning, where I collaborated with the UI/UX designers to
+            final the design for the system, backend team to design and integrate API's required on the frontend, etc.
+            Later on I was also involved in the data migration from old
+            to the new system (SQL to MongoDB) which we achieved using Apache NiFi. Now as a student I'm spending my
+            time learning more about data engineering and data analysis.
+            <br /> <br />
+            Apart from that I'm also involved in a few clubs on campus related to tech and entrepreneurship. I'm an
+            active member of UpClub which promotes entrepreneurship and activities related to it. ALPFA is another club
+            in which I'm actively involved.
+            Getting to participate and attend various events on and well as off campus has helped me improve my
+            communication and interpersonal skills a lot.
+            <br /> <br />
+            In my free time, I like clicking pictures, working out, travelling, playing computer games and just meeting
+            new people:)
+            <br><br><br><br><br><br><br>
         </div>
       </div>
-    </section>
-    <section id="footer">
-      <p class="copyright">
-        <i class="far fa-copyright"></i> 2022 Aditya Chache
-      </p>
-    </section>
-  </body>
+    </div>
+  </section>
+
+
+  <!-- work experience section -->
+  <section class="work-section bg-light">
+    <div class="container" id="work">
+
+      <div class="work-title bg-black">
+        <!--title -->
+        <div class="row no-gutters bg-black mb-5 mb-lg-0">
+          <div class="workpadding">
+            <h2 class="text-white featured-text">Work Experience</h2>
+            <br>
+          </div>
+        </div>
+
+        <!--title -->
+        <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0">
+
+          <div class="col-lg-2 text-center">
+            <img class="circularlogo" src="public/img/Jio_Logo.png" alt="googlelogo.jpg" height="200">
+          </div>
+
+          <!--google-->
+          <div class="col-lg-10">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <div class="workpadding">
+                    <h4 class="text-white">Jio Platforms Limited</h4>
+                    <h5 class="text-white">Software Engineer</h5>
+                    <p class="text-white">Sep 2022 - Jun 2024</p>
+                    <ul class="mb-0 text-white-50">
+                      <li>Spearheaded the migration of Enterprise Product Catalog and Order Care systems from Ericsson
+                        Conceptwave to
+                        open-source technologies, enhancing system flexibility and reducing costs.</li>
+                      <li>Designed and integrated RESTful APIs in collaboration with backend teams, improving data flow
+                        and
+                        application functionality by 20%.</li>
+                      <li>Optimized deployment processes by developing dynamic IP and Port configuration scripts,
+                        reducing deployment
+                        time by 50%.</li>
+                      <li>Improved data retrieval speed by 35% by writing and executing complex SQL queries,
+                        significantly enhancing
+                        API performance.</li>
+                      <li>Actively participated in code review sessions, providing constructive feedback and driving
+                        continuous improvement
+                        in code quality, while also authoring detailed code documentation to enhance project
+                        maintainability and simplify
+                        the onboarding process for new developers.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section bg-light">
+    <div class="container" id="projects">
+      <br><br>
+
+      <div class="workpadding">
+        <h2 class="text-black featured-text"> Projects</h2>
+        <br>
+        <p class="text-black-50 mb-0">Below are some of the projects I've worked on.</p>
+      </div>
+
+      <div class="bg-black"> <!-- this div hides the weird white spaces between some projects in mobile -->
+
+        <!-- Project 1 Object Tracker -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6 bg-black">
+            <img class="img-fluid" src="public/img/objtracker.png" alt="Project1Image">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Object Tracker</h4>
+                  <p class="mb-0 text-white-50">Real time object detection and count tracking using YoloV5.</p>
+
+                  <a href="https://object-tracker-hcbcsom4yse88ny6qs7dbw.streamlit.app/" class="btn">Implementation</a>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 2 Flight Fare Prediction Analysis -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6 bg-black">
+            <img class="img-fluid" src="public/img/flightfare.png" alt="Project2Image">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Flight Fare Prediction</h4>
+                  <p class="mb-0 text-white-50">Analysing data to predict the fare of flights</p>
+
+                  <a href="https://github.com/adityachache/Flight-Fare-Prediction" class="btn">Jupyter Notebook</a>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 3 Tableau Visualizations -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6 bg-white">
+            <img class="img-fluid" src="public/img/tableau.png" alt="Project3Image">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Tableau Visualizations</h4>
+                  <p class="mb-0 text-white-50">Data Visualization in Tableau for retail and consumer purchase data.</p>
+                  <a href="https://public.tableau.com/app/profile/aditya.chache/vizzes" class="btn">Implementation</a>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="signup" class="contact-section bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Connect with me!</h2>
+          <br><br>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="mailto:aditya.chache@gmail.com">aditya.chache@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-user-friends text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Socials</h4>
+              <hr class="my-4">
+              <div class="social">
+                <a href="https://www.linkedin.com/in/aditya-chache-2647091a7/" class="mx-2">
+                  <i class="fab fa-linkedin iconbig"></i>
+                </a>
+                <a href="https://github.com/adityachache" class="mx-2">
+                  <i class="fab fa-github iconbig"></i>
+                </a>
+                <a href="https://www.instagram.com/adityac__09/" class="mx-2">
+                  <i class="fab fa-instagram iconbig"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                +1 (510) 807-8968
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      &copy; <span id="year"></span> Aditya Chache
+    </div>
+  </footer>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="public/vendor/jquery/jquery.min.js"></script>
+  <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="public/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="public/js/grayscale.min.js"></script>
+  <script>
+    $("#resume-button").css('visibility', 'visible')
+
+  </script>
+
+  <script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    // Set the year in the footer
+    document.getElementById("year").textContent = currentYear;
+  </script>
+
+</body>
+
 </html>
